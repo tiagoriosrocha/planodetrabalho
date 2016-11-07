@@ -1,0 +1,403 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css">
+    <style>
+      .bootstrap-iso .form-group button, .bootstrap-iso form input.form-control, .bootstrap-iso form textarea.form-control, .bootstrap-iso form select.form-control, .bootstrap-iso form .form-group-lg input.form-control, .bootstrap-iso form .form-group-lg textarea.form-control, .bootstrap-iso form .form-group-lg select.form-control, .bootstrap-iso form .form-group-sm input.form-control, .bootstrap-iso form .form-group-sm textarea.form-control, .bootstrap-iso form .form-group-sm select.form-control{-webkit-border-radius: 20px;-moz-border-radius: 20px; border-radius: 20px;}.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: #ffffff !important;} .asteriskField{color: red;}.bootstrap-iso form .input-group-addon {color:#555555; background-color: #eeeeee; border-radius: 20px; padding-left:15px}
+    </style>
+  </head><body>
+    <!-- * * * * * * * * * * *-->
+    <!-- * * * * cabeçalho* * *-->
+    <!-- * * * * * * * * * * *-->
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span>Plano de Trabalho Docente</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="#apresentacao">Home</a>
+            </li>
+            <li>
+              <a href="#rodape">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- * * * * * * * * * * *-->
+    <!-- * * * * Intro * * * *-->
+    <!-- * * * * * * * * * * *-->
+    <div class="section" id="apresentacao">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>A title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+              ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+              dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+              nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+              Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+              enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
+              felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
+              elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+              porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus
+              in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+              laoreet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- * * * * * * * * * * *-->
+    <!-- * * * * TAB * * * * *-->
+    <!-- * * * * * * * * * * *-->
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1 class="text-center">Plano de Trabalho Docente</h1>
+                    <br>
+                    <br>
+                  </div>
+                </div>
+                <!-- tabs: https://codepen.io/wizly/pen/BlKxo/ -->
+                <div class="row">
+                  <div class="panel with-nav-tabs panel-info">
+                    <div class="panel-heading">
+                      <ul class="nav nav-tabs">
+                        <li class="active">
+                          <a href="#1a" data-toggle="tab">Informações Básicas</a>
+                        </li>
+                        <li>
+                          <a href="#2a" data-toggle="tab">Aulas</a>
+                        </li>
+                        <li>
+                          <a href="#3a" data-toggle="tab">Atividades de Ensino</a>
+                        </li>
+                        <li>
+                          <a href="#4a" data-toggle="tab">Atividades de Pesquisa</a>
+                        </li>
+                        <li>
+                          <a href="#5a" data-toggle="tab">Atividades de Extensão</a>
+                        </li>
+                        <li>
+                          <a href="#6a" data-toggle="tab">Atividades Administrativas</a>
+                        </li>
+                        <li>
+                          <a href="#7a" data-toggle="tab">Horários Presenciais</a>
+                        </li>
+                        <li>
+                          <a href="#8a" data-toggle="tab">Gerar Relatório</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="panel-body">
+                      <div class="tab-content">
+                        <!-- * * * * * * * * * * *-->
+                        <!-- * * * * painel * * * *-->
+                        <!-- * * * * * * * * * * *-->
+                        <div class="tab-pane active" id="1a">
+                          <div class="bootstrap-iso">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                  <div class="formden_header">
+                                    <h2>Informações Básicas</h2>
+                                    <p></p>
+                                  </div>
+                                  <form class="form-horizontal" method="post">
+                                    <div class="form-group form-group-lg">
+                                      <label class="control-label col-sm-2 requiredField" for="name">Professor
+                                        <span class="asteriskField">*</span>
+                                      </label>
+                                      <div class="col-sm-10">
+                                        <input class="form-control" id="name" name="name" type="text">
+                                      </div>
+                                    </div>
+                                    <div class="form-group form-group-lg">
+                                      <label class="control-label col-sm-2 requiredField" for="email">Área do Conhecimento:</label>
+                                      <div class="col-sm-10">
+                                        <input class="form-control" id="email" name="email" type="text">
+                                      </div>
+                                    </div>
+                                    <div class="form-group form-group-lg">
+                                      <label class="control-label col-sm-2 requiredField">Regime de Trabalho:
+                                        <span class="asteriskField">*</span>
+                                      </label>
+                                      <div class="col-sm-10">
+                                        <div class="radio">
+                                          <label class="radio">
+                                            <input name="radio" type="radio" value="20h">20h</label>
+                                        </div>
+                                        <div class="radio">
+                                          <label class="radio">
+                                            <input name="radio" type="radio" value="40h">40h</label>
+                                        </div>
+                                        <div class="radio">
+                                          <label class="radio">
+                                            <input name="radio" type="radio" value="40h DE">40h DE</label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="form-group form-group-lg">
+                                      <label class="control-label col-sm-2" for="name1">Semestre/Período:</label>
+                                      <div class="col-sm-10">
+                                        <input class="form-control" id="name1" name="name1" type="text">
+                                      </div>
+                                    </div>
+                                    <div class="form-group">
+                                      <div class="col-sm-10 col-offset-8">
+                                        <a class="btn btn-primary btn-md btnNext">Próximo</a>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- * * * * * * * * * * *-->
+                        <!-- * * * * painel * * * *-->
+                        <!-- * * * * * * * * * * *-->
+                        <div class="tab-pane" id="2a">
+                          <div class="formden_header">
+                            <h2>Registro de Aulas</h2>
+                            <div class="col-sm-10">
+                              <button type="button" class="btn btn-primary btn-circle" data-toggle="modal" data-target="#modalLogin">+</button>
+                              <button type="button" class="btn btn-primary btn-circle" data-toggle="modal" data-target="#modalLogin">-</button>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="col-sm-10 col-offset-8">
+                              <a class="btn btn-primary btn-md btnPrevious">Anterior</a>
+                              <a class="btn btn-primary btn-md btnNext">Próximo</a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- * * * * * * * * * * *-->
+                        <!-- * * * * painel * * * *-->
+                        <!-- * * * * * * * * * * *-->
+                        <div class="tab-pane" id="3a">
+                          <h3>Atividades Complementares de Ensino</h3>
+                          <br>
+                          <br>
+                          <div class="col-sm-10 col-offset-8">
+                            <a class="btn btn-primary btn-md btnPrevious">Anterior</a>
+                            <a class="btn btn-primary btn-md btnNext">Próximo</a>
+                          </div>
+                        </div>
+                        <!-- * * * * * * * * * * *-->
+                        <!-- * * * * painel * * * *-->
+                        <!-- * * * * * * * * * * *-->
+                        <div class="tab-pane" id="4a">
+                          <h3>Atividades de Pesquisa (Cadastradas no SigProj e Aprovadas pela CAGPPI)</h3>
+                          <br>
+                          <br>
+                          <div class="col-sm-10 col-offset-8">
+                            <a class="btn btn-primary btn-md btnPrevious">Anterior</a>
+                            <a class="btn btn-primary btn-md btnNext">Próximo</a>
+                          </div>
+                        </div>
+                        <!-- * * * * * * * * * * *-->
+                        <!-- * * * * painel * * * *-->
+                        <!-- * * * * * * * * * * *-->
+                        <div class="tab-pane" id="5a">
+                          <h3>Atividades de Estensão (Cadastradas no SigProj e aprovadas pela CGAE)</h3>
+                          <br>
+                          <br>
+                          <div class="col-sm-10 col-offset-8">
+                            <a class="btn btn-primary btn-md btnPrevious">Anterior</a>
+                            <a class="btn btn-primary btn-md btnNext">Próximo</a>
+                          </div>
+                        </div>
+                        <!-- * * * * * * * * * * *-->
+                        <!-- * * * * painel * * * *-->
+                        <!-- * * * * * * * * * * *-->
+                        <div class="tab-pane" id="6a">
+                          <h3>Atividades Administrativas</h3>
+                          <br>
+                          <br>
+                          <div class="col-sm-10 col-offset-8">
+                            <a class="btn btn-primary btn-md btnPrevious">Anterior</a>
+                            <a class="btn btn-primary btn-md btnNext">Próximo</a>
+                          </div>
+                        </div>
+                        <!-- * * * * * * * * * * *-->
+                        <!-- * * * * painel * * * *-->
+                        <!-- * * * * * * * * * * *-->
+                        <div class="tab-pane" id="7a">
+                          <h3>Plano de Atividades de Ensino com Horários Fixos Durante o Semestre</h3>
+                          <br>
+                          <br>
+                          <div class="col-sm-10 col-offset-8">
+                            <a class="btn btn-primary btn-md btnPrevious">Anterior</a>
+                            <a class="btn btn-primary btn-md btnNext">Próximo</a>
+                          </div>
+                        </div>
+                        <!-- * * * * * * * * * * *-->
+                        <!-- * * * * painel * * * *-->
+                        <!-- * * * * * * * * * * *-->
+                        <div class="tab-pane" id="8a">
+                          <h3>Geração de Relatório</h3>
+                          <br>
+                          <br>
+                          <div class="col-sm-10 col-offset-8">
+                            <a class="btn btn-primary btn-md btnPrevious">Anterior</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- * * * * * * * * * * *-->
+      <!-- * * * * rodapé * * * *-->
+      <!-- * * * * * * * * * * *-->
+      <footer class="section section-primary" id="rodape">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <h1>Plano de Trabalho Docente</h1>
+              <p>Projeto Desenvolvido em âmbito do curso de Bacharelado em Ciência da Computação
+                - IFRS - Ibirubá</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="text-info text-right">
+                <br>
+                <br>
+              </p>
+              <div class="row">
+                <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+                  <a href="http://inf.ibiruba.ifrs.edu.br"><i class="fa fa-3x fa-fw fa-globe text-inverse"></i></a>
+                  <a href="https://www.facebook.com/computacaoibiruba/"><i class="fa fa-3x fa-fw fa-facebook-square text-inverse"></i></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 hidden-xs text-right">
+                  <a href="http://inf.ibiruba.ifrs.edu.br"><i class="fa fa-3x fa-fw fa-globe text-inverse"></i></a>
+                  <a href="https://www.facebook.com/computacaoibiruba/"><i class="fa fa-3x fa-fw fa-facebook-square text-inverse"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- * * * * * * * * * * * * * * * * * * * *-->
+      <!-- * * * *Conteúdo da janela modal * * * *-->
+      <!-- * * * * * * * * * * * * * * * * * * * *-->
+      <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+              <h4 class="modal-title">Insira um registro de Aula</h4>
+            </div>
+            <div class="modal-body">
+              <div class="bootstrap-iso">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <form class="form-horizontal" id="aula_form" role="form" data-toggle="validator">
+                        <div class="form-group form-group-lg">
+                          <label class="control-label col-sm-2" for="aula_nome">Nome da Disciplina:</label>
+                          <div class="col-sm-10">
+                            <input class="form-control" id="aula_nome" name="aula_nome" type="text" required="" placeholder="Algoritmos e Programação II">
+                          </div>
+                        </div>
+                        <div class="form-group form-group-lg">
+                          <label class="control-label col-sm-2" for="aula_curso">Curso:</label>
+                          <div class="col-sm-10">
+                            <input class="form-control" id="aula_curso" name="aula_curso" type="text" required="" placeholder="Técnico Integrado em Informática">
+                          </div>
+                        </div>
+                        <div class="form-group form-group-lg">
+                          <label class="control-label col-sm-2" for="aula_ch">C.H. média Semanal:</label>
+                          <div class="col-sm-10">
+                            <input class="form-control" id="aula_ch" name="aula_ch" type="text" required="" placeholder="4:10">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-sm-10 col-sm-offset-2">
+                            <button class="btn btn-primary btn-lg" name="aula_submit" type="submit">Salvar</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+      <!-- * * * * * * * * * * * *-->
+      <!-- * * *fim do modal * * *-->
+      <!-- * * * * * * * * * * * *-->
+      <!-- * * * * * * * * * * * * * * * * * * * *-->
+      <!-- * * * *Conteúdo da janela modal * * * *-->
+      <!-- * * * * * * * * * * * * * * * * * * * *-->
+      <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+              <h4 class="modal-title">Insira ....</h4>
+            </div>
+            <div class="modal-body">
+              <form action="" method="post"></form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- * * * * * * * * * * * *-->
+      <!-- * * *fim do modal * * *-->
+      <!-- * * * * * * * * * * * *-->
+      <script>
+        $(document).ready(function() {
+            $('#tabela').DataTable();
+        } );
+          
+        $('.btnNext').click(function(){
+    		$('.nav-tabs > .active').next('li').find('a').trigger('click');
+  		});
+  
+    	$('.btnPrevious').click(function(){
+    		$('.nav-tabs > .active').prev('li').find('a').trigger('click');
+  		});
+      </script>
+      <!-- <script type="text/javascript" src="js/jquery.validate.js"></script>
+      <script type="text/javascript" src="js/aula_form.js"></script>
+	-->
+    </div>
+  
+
+</body></html>
